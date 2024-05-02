@@ -1,0 +1,93 @@
+*{
+    background-color: white;
+}
+.contain{
+    size: cover;
+    background-color: white;
+}
+
+
+
+
+
+
+.big-cilce{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color:2px solid black;
+ 
+}
+.cilce{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:2px solid black;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+ -webkit-animation:circle 2s linear infinite;
+ animation: circle 2s linear infinite;
+
+}@-webkit-keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(-155px)rotate(-360deg);
+
+    }
+    100%{
+        transform: rotate(360deg)translate(-155px)rotate(-360deg);
+
+    }
+}
+.batter-top{
+    width: 20px;
+    height: 10px;
+    background-color: black;
+    margin: 0 auto;
+    border: 2px solid silver;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.batter-content{
+    width: 40px;
+    height: 70px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+}
+.charge{
+bottom: 0;
+position: absolute;
+width: 100%;
+
+
+animation: battery 8s linear infinite;
+}
+@-webkit-keyframes battery{
+   0%{background-color:red;
+    height: 0%;}
+25%{
+    background-color: orange;
+    height:25% ;
+}
+50%{
+    background-color: yellow;
+    height: 50%;
+}
+    100%{
+        background-color: yellowgreen;
+        height:100%
+    }
+
+}
